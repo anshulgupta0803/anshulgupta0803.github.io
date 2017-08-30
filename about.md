@@ -11,7 +11,7 @@ layout: page
 </div>
 
 <div class="md-card shadow">
-    <div class="title icon-stats-bars">
+    <div class="title">
         <h2>Skills</h2>
     </div>
     <div class="content">
@@ -24,7 +24,7 @@ layout: page
 </div>
 
 <div class="md-card shadow education">
-    <div class="title icon-library">
+    <div class="title">
         <h2>Education</h2>
     </div>
     {% for entry in cv.education %}
@@ -83,7 +83,6 @@ layout: page
             <li> {{ technology }}</li>
             {% endfor %}
         </ul>
-        <span class="icon-briefcase"></span>
     </div>
 </div>
 {% endfor %}

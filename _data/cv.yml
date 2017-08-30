@@ -1,14 +1,20 @@
 anshulgupta:
-    profile: "Integer sit amet libero non sapien sagittis dapibus. Phasellus gravida quam ac nisl finibus dictum. Pellentesque vel orci et nisi pretium tincidunt nec a diam. Vivamus et leo eu lorem congue pellentesque id sed tortor. Nulla et nibh neque. Sed ut fermentum lectus, id rhoncus erat."
+    profile: "Experienced Developer with a demonstrated history of working in the information technology and services industry. Skilled in Python, PHP, C++, Java, and Shell Scripting. Strong engineering professional with a Master of Technology (M.Tech.) focused in Computer Science and Engineering from Indian Institute of Technology, Bombay. "
     skills:
         - "C#, ASP.NET MVC"
         - "XAML, WPF, LINQ, Silverlight"
         - "JavaScript, jQuery, HTML5, CSS, LESS"
         - "Web Services, Active Directory, Windows 10, Windows Phone Apps"
+
     education:
-        - time:             "2009 - 2011"
-          location:         "University of Someplace"
-          description:      "BSc in Applied Computer Science"
+        - time:             "2011 - 2015"
+          location:         "The LNM Institute of Information Technology"
+          description:      "B.Tech in Computer Science and Engineering"
+
+        - time:             "2016 - Present"
+          location:         "IIT Bombay"
+          description:      "M.Tech in Computer Science and Engineering"
+
     employment:
         - time:             "02.2015 - 11.2017"
           location:         "Stuttgart"
@@ -18,7 +24,7 @@ anshulgupta:
             - "Support of web applications"
             - "Training of students"
             - "Flirting with the secretary"
-        - time:             "08.2011 - 02.2015"
+        - time:             "Aug'11 - Feb'15"
           location:         "Berlin"
           company:          "Local-B Company"
           position:         "Junior Developer"
