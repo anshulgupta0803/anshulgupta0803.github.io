@@ -4,43 +4,86 @@ layout: page
 ---
 ![Profile Image]({{ site.url }}/{{ site.picture }})
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+{% assign cv = site.data.cv.anshulgupta %}
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="md-card no-border">
+    <p>{{cv.profile}}</p>
+</div>
 
-<h2>Skills</h2>
+<div class="md-card shadow">
+    <div class="title icon-stats-bars">
+        <h2>Skills</h2>
+    </div>
+    <div class="content">
+        <ul>
+            {% for skill in cv.skills %}
+            <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
 
-<ul class="skill-list">
-	<li>HTML - Jade - Haml - Erb</li>
-	<li>Responsive (Mobile First)</li>
-	<li>CSS (Stylus, Sass, Less)</li>
-	<li>Css Frameworks (Bootstrap, Foundation)</li>
-	<li>Javascript (Design Patterns, Testes)</li>
-	<li>NodeJS</li>
-	<li>AngularJS - ReactJS</li>
-	<li>Grunt - Gulp - Yeoman</li>
-	<li>Git</li>
-	<li>PHP</li>
-	<li>Python</li>
-	<li>MySQL - MongoDB</li>
-	<li>Scrum and Kanban</li>
-	<li>TDD e Continuous Integration</li>
-</ul>
+<div class="md-card shadow education">
+    <div class="title icon-library">
+        <h2>Education</h2>
+    </div>
+    {% for entry in cv.education %}
+    <dl>
+        <dt class="time">{{entry.time}}</dt>
+        <dd>
+            <h3>{{entry.location}}</h3>
+            <p>{{entry.description}}</p>
+        </dd>
+    </dl>
+    {% endfor %}
+</div>
 
-<h2>Projects</h2>
+<h2 class="employment-heading">Employment History</h2>
 
-<ul>
-	<li><a href="https://github.com/">Lorem Lorem</a></li>
-	<li><a href="https://github.com/">Ipsum Dolor</a></li>
-	<li><a href="https://github.com/">Dolor Lorem</a></li>
-</ul>
+<div class="timeline-container">
+    {% for employment in cv.employment %}
+    <div class="timeline-block">
+        <div class="marker"></div>
+        <div class="time">{{employment.time}}</div>
+        <div class="timeline-content">
+            <div class="time">{{employment.time}}</div>
+            <h3>{{employment.position}}</h3>
+            <span>{{employment.company}} ({{employment.location}})</span>
+            <ul>
+                {% for responsibility in employment.responsibilities %}
+                <li>{{responsibility}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+<h2 class="project-heading">Project History</h2>
+
+{% for project in cv.projects %}
+<div class="md-card shadow project">
+    <div class="meta">
+        <div class="team">{{project.team}}</div>
+        <div class="time">{{project.time}}</div>
+    </div>
+    <div class="content">
+        <h2>{{project.title}}</h2>
+        <ul>
+            {% for responsibility in project.responsibilities %}
+            <li>{{responsibility}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="footer">
+        <ul>
+            {% assign technologies = project.technologies | split: ',' %}
+            {% for technology in technologies %}
+            <li> {{ technology }}</li>
+            {% endfor %}
+        </ul>
+        <span class="icon-briefcase"></span>
+    </div>
+</div>
+{% endfor %}
