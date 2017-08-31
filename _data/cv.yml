@@ -16,22 +16,32 @@ anshulgupta:
           description:      "M.Tech in Computer Science and Engineering"
 
     employment:
-        - time:             "02.2015 - 11.2017"
-          location:         "Stuttgart"
-          company:          "South-West Company"
-          position:         ".NET Developer"
+        - time:             "May'13 - Jul'13"
+          location:         "New Delhi"
+          company:          "Indraprastha Institute of Information Technology, Delhi"
+          position:         "Intern"
           responsibilities:
-            - "Support of web applications"
-            - "Training of students"
-            - "Flirting with the secretary"
-        - time:             "Aug'11 - Feb'15"
-          location:         "Berlin"
-          company:          "Local-B Company"
-          position:         "Junior Developer"
+            - "Identified various parameters which affect the execution of a job on Hadoop Clusters"
+            - "design a framework to execute the jobs on the given cluster"
+            - "Optimized performance of Hadoop clusters by varying multiple configuration factors and schedulers"
+
+        - time:             "May'14 - Jul'14"
+          location:         "Lyon, France"
+          company:          "École Normale Supérieure de Lyon"
+          position:         "Intern"
           responsibilities:
-            - "Developed jQuery plugins"
-            - "Had a nice place on the window"
-            - "Dreamed about beeing a senior developer"
+            - "Studied the behavior of combination of two tools Scalatrace and Simgrid for the off-line performance analysis of MPI applications and developed original extrapolation method to improve the accuracy of the simulated results"
+            - "Analyzed Time Independent traces acquired on Grid’5000 of NPB Benchmarks for different problem sizes to find a pattern for extrapolation of CPU rate"
+
+        - time:             "Jun'17 - Aug'17"
+          location:         "The Linux Foundation"
+          company:          "Google Summer of Code'17"
+          position:         "Developer"
+          responsibilities:
+            - "Designed a Common Print Dialog for desktops using Qt"
+            - "CUPS and Google Cloud Print support in the dialog"
+            - "Hopefully it will feature in Ubuntu 18.04"
+
     projects:
         - time:             "5 months in 2017"
           team:             "Team of 2"
