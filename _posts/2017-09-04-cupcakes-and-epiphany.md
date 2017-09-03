@@ -1,7 +1,7 @@
 ---
 title: Cupcakes and Epiphany
 layout: post
-date: 2017-09-04 05:12
+date: 2017-09-04 05:13
 image: /assets/images/epiphany-001.png
 headerImage: true
 tag:
