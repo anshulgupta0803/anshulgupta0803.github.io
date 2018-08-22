@@ -5,7 +5,7 @@
                 <a class="link" href="{{ site.url }}/">Home</a>
             </li>
         {% endif %}
-        
+
         {% if site.about == true %}
             {% if page.title != "About" %}
                 <li class="item">
@@ -25,7 +25,8 @@
         {% if site.projects == true %}
             {% if page.title != "Projects" %}
                 <li class="item">
-                    <a class="link" href="{{ site.url }}/projects">Projects</a>
+                    <!-- <a class="link" href="{{ site.url }}/projects">Projects</a> -->
+                    <a class="link" href="{% if site.projects-external %}{{ site.projects-url }}{% else %}{{ site.url }}/projects{% endif %}">Projects</a>
                 </li>
             {% endif %}
         {% endif %}
