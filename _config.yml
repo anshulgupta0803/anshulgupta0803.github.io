@@ -15,7 +15,7 @@ picture: assets/images/profile.jpg
 resume: true
 resume-external: false
 # resume-url: https://github.com/anshulgupta0803/resume/blob/master/AnshulGupta.pdf
-resume-url: AnshulGupta.pdf
+resume-url: resume
 
 url: https://anshulgupta0803.github.io
 # your url: http://USERNAME.github.io
