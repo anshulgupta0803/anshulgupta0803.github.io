@@ -76,7 +76,7 @@ projects-external: true
 projects-url: https://github.com/anshulgupta0803?tab=repositories
 
 # if you don't need "about" or "blog", comment them out below
-about: true
+about: false
 blog: false
 
 # do you want to show the "read time" of the posts?
